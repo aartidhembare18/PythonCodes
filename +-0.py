@@ -7,7 +7,10 @@ elif num == 0:
 else:
    print("Negative number")
 
+<<<<<<< HEAD
 
 #change
 
 
+=======
+>>>>>>> parent of 1a4fd4a... add last line
