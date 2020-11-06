@@ -1,0 +1,12 @@
+import socket
+serversocket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+host=socket.gethostname()
+port=3055
+serversocket.bind((host,port))
+serversocket.listen(5)
+while(True):
+	clientsocket,addr=serversocket.accept()
+	print("got a connection from %s"%str(addr))
+	msg="thank you for connection"
+	clientsocket.send(msg.encode('ascii'))
+	clientsocket.close()
