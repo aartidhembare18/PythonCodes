@@ -11,4 +11,3 @@ else:
 #change
 #name
 #address
-#contact
